@@ -1,12 +1,15 @@
 import './App.css'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+
 
 function App() {
  
 
   return (
     <>
-     <button class="btn btn-success">Success</button>
-     <div className="font-bold text-5xl">Welcome!</div>
+    <Header/>
+    <Footer/>
     </>
   )
 }
