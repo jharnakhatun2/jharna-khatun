@@ -1,5 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("https://i.ibb.co.com/Mh8ftjv/1.webp") no-repeat fixed center ;
+  background-size: cover;
+}
+/* Dropdown hidden by default */
+.dropdown {
+width: 100%;
+height: auto;
+left: 0;
+top: 0;
+transition: max-height 0.3s ease;
+max-height: 0;
+overflow: hidden;
+}
+
+/* Dropdown when open */
+.dropdown.open {
+max-height: 300px;
+}
+
+/* bg-neutral rounded-sm px-2 py-1 text-xs font-normal hover:bg-white transition-all hover:text-primary */
+/*Skill buttons*/
+.skillBtn{
+border: solid white 1px;
+margin: 5px;
+padding: 2px 5px;
+background-color: transparent;
+transition: background-color .3s ease-in-out;
+}
+.skillBtn:hover{
+background-color: white;
+}
+
+/* recent post */
+.recent-post{
+padding: 30px 0;
+}
+
+.active a {
+font-weight: bold; 
+color: rgb(3, 3, 3); 
 }

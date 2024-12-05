@@ -7,8 +7,11 @@ export default {
     "./components/**/*.{html,js,jsx}",
   ],
   theme: {
-    extend: {},
+    
   },
   plugins: [require('daisyui')],
+  daisyui: {
+    themes: ["light", "dark", "wireframe", "nord"],
+  },
  
 }
