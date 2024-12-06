@@ -50,10 +50,10 @@ const Navigation = () => {
     </ul>
   </nav>
   {/*----------- large navbar ---------------*/}
-  <header className="hidden md:block  bg-white bg-opacity-5">
+  <header className="hidden md:block  bg-white bg-opacity-5 px-5">
     <div className="container mx-auto flex items-center h-16">
       <a href="index.html" className="flex items-center justify-center">
-        <span className="ml-4 uppercase font-black">JHARNA KHATUN</span>
+        <span className="uppercase font-black">JHARNA KHATUN</span>
       </a>
       <nav className="contents text-base lg:text-md">
         <ul className="mx-auto flex items-center">
