@@ -5,8 +5,7 @@ import SocialIcon from "../../components/HomeContent/SocialIcon";
 
 const Home = () => {
   return (
-    <div className="h-screen flex flex-col justify-between">
-      <Navigation />
+    <div className="h-full flex flex-col">
       <HomeContent/>
       <SocialIcon/>
     </div>

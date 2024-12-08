@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -52,34 +53,29 @@ const Navigation = () => {
       {/*----------- large navbar ---------------*/}
       <header className="hidden md:block  bg-white bg-opacity-5 px-5">
         <div className="container mx-auto flex items-center h-16">
-          <a href="index.html" className="flex items-center justify-center">
-            <span className="uppercase font-black">JHARNA KHATUN</span>
-          </a>
+        <div>
+          <Link to="/" className="uppercase font-black">JHARNA KHATUN</Link>
+          </div>
+          
           <nav className="contents text-base lg:text-md">
             <ul className="mx-auto flex items-center">
               <li className="p-5 xl:p-8 ">
-                <a href="about.html">
-                  <span>About</span>
-                </a>
+                <Link to="/">Home</Link>
               </li>
-              <li className="p-5 xl:p-8">
-                <a href="projects.html">
-                  <span>Projects</span>
-                </a>
+              <li className="p-5 xl:p-8 ">
+                <Link to="/about">About</Link>
               </li>
-              <li className="p-5 xl:p-8">
-                <a href="blogs.html">
-                  <span>Blog</span>
-                </a>
+              <li className="p-5 xl:p-8 ">
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li className="p-5 xl:p-8 ">
+                <Link to="/blogs">Blogs</Link>
               </li>
             </ul>
           </nav>
-          <a
-            href="contact.html"
-            className="border border-white rounded-full font-bold px-8 py-2 hover:border-transparent hover:bg-zinc-400 hover:text-white transition-all"
-          >
-            Contact me
-          </a>
+          <div>
+          <Link to="/contact" className="border border-white rounded-full font-bold px-8 py-3 hover:border-transparent hover:bg-zinc-400 hover:text-white transition-all">Contact me</Link>
+          </div>
         </div>
       </header>
     </>
