@@ -44,4 +44,19 @@
         "live_links": "https://framework-manager.vercel.app/",
         "source_code" : "https://github.com/jharnakhatun2/framework-manager"
       },
+      {
+        "id" : "4",
+        "tags": ["javascript","dom"],
+        "image": "https://i.ibb.co.com/ky8tzBn/realestate-ai.png",
+        "title":"AI Property Listings Generator",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/real-estate-ai",
+          "totalStars": "8",
+        },
+        "description": "AI-generated property listings provide a more efficient, accurate and personalized experience for both real estate professionals and property seekers, improving the effectiveness of the property market as a whole.",
+        "tagsList": ["AI-Generator", "Property Listing", "MERN", "React.js", "Web App"],
+        "live_links": "https://realestategenius.netlify.app/",
+        "source_code" : "https://github.com/jharnakhatun2/real-estate-ai"
+      },
 ]
