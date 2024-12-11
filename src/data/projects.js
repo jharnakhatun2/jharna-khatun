@@ -4,7 +4,7 @@ const projects = [
         "tags": ["dom", "javascript"],
         "image": "https://i.ibb.co.com/P59sdRF/quiz.png",
         "title":"JavaScript Quiz Game",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/quizeapp",
           "totalStars": "65",
@@ -19,7 +19,7 @@ const projects = [
         "tags": ["javascript","dom"],
         "image": "https://i.ibb.co.com/tYDRd8T/form-Validation.png",
         "title":"Dynamic Form Validation",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/javascript-form-validation",
           "totalStars": "65",
@@ -34,7 +34,7 @@ const projects = [
         "tags": ["javascript","dom"],
         "image": "https://i.ibb.co.com/r3XGkmd/framework-Manager.png",
         "title":"Framework Manager",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/framework-manager",
           "totalStars": "65",
@@ -49,7 +49,7 @@ const projects = [
         "tags": ["javascript","dom"],
         "image": "https://i.ibb.co.com/ky8tzBn/realestate-ai.png",
         "title":"AI Property Listings Generator",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/real-estate-ai",
           "totalStars": "8",
@@ -64,7 +64,7 @@ const projects = [
         "tags": ["landingpage","html"],
         "image": "https://i.ibb.co.com/gtm4jk5/landingpage.png",
         "title":"Portable Charger",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/portable-charger",
           "totalStars": "8",
@@ -79,7 +79,7 @@ const projects = [
         "tags": ["landingpage","html"],
         "image": "https://i.ibb.co.com/dkVVgtz/image-search-app.png",
         "title":"IMAGE SEARCH APP",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/Image-Search-App",
           "totalStars": "0",
@@ -95,7 +95,7 @@ const projects = [
         "tags": ["landingpage","html"],
         "image": "https://i.ibb.co.com/K0BWTWy/strage.png",
         "title":" Web Storage Manager",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/Image-Search-App",
           "totalStars": "0",
@@ -110,7 +110,7 @@ const projects = [
         "tags": ["landingpage","html"],
         "image": "https://i.ibb.co.com/25zRjJD/matchmaster.png",
         "title":" PlayBudget App",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/best-five-dom_repo?tab=readme-ov-file",
           "totalStars": "1",
@@ -125,7 +125,7 @@ const projects = [
         "tags": ["landingpage","html"],
         "image": "https://i.ibb.co.com/bvbGVph/travelzone.png",
         "title":" Tour booking App",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/travel-xone",
           "totalStars": "0",
@@ -140,7 +140,7 @@ const projects = [
         "tags": ["javascript","jsdom"],
         "image": "https://i.ibb.co.com/NN9wMbN/areaCM.png",
         "title":" Geometry Area Calculation Manager",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/geometry-area-calculator",
           "totalStars": "0",
@@ -155,7 +155,7 @@ const projects = [
         "tags": ["javascript","jsdom"],
         "image": "https://i.ibb.co.com/CwqhnJH/alphabet-game.png",
         "title":"Alphabet Clash Pro Game",
-        "date": 'new Date()',
+        "date": 'Oct 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/alphabet-clash",
           "totalStars": "0",
