@@ -1,4 +1,4 @@
-[
+const projects = [
     {
         "id" : "1",
         "tags": ["dom", "javascript"],
@@ -59,4 +59,111 @@
         "live_links": "https://realestategenius.netlify.app/",
         "source_code" : "https://github.com/jharnakhatun2/real-estate-ai"
       },
+      {
+        "id" : "5",
+        "tags": ["landingpage","html"],
+        "image": "https://i.ibb.co.com/gtm4jk5/landingpage.png",
+        "title":"Portable Charger",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/portable-charger",
+          "totalStars": "8",
+        },
+        "description": "The Portable Charger Landing Page is a responsive HTML and CSS web page designed to showcase and promote portable charger products.",
+        "tagsList": ["Landing Page", "HTML", "CSS", "Web Design", "Web App"],
+        "live_links": "https://portable-charger.vercel.app/",
+        "source_code" : "https://github.com/jharnakhatun2/portable-charger"
+      },
+      {
+        "id" : "6",
+        "tags": ["landingpage","html"],
+        "image": "https://i.ibb.co.com/dkVVgtz/image-search-app.png",
+        "title":"IMAGE SEARCH APP",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/Image-Search-App",
+          "totalStars": "0",
+        },
+        "description": "This app allows users to search for images by keywords and displays the results dynamically.It fetches images from an external API and showcases them in a responsive grid layout.",
+        "tagsList": ["JavaScript", "HTML", "CSS", "Web Design", "Web App"],
+        "live_links": "https://image-search-app-khaki.vercel.app/",
+        "source_code" : "https://github.com/jharnakhatun2/Image-Search-App"
+      },
+
+      {
+        "id" : "7",
+        "tags": ["landingpage","html"],
+        "image": "https://i.ibb.co.com/K0BWTWy/strage.png",
+        "title":" Web Storage Manager",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/Image-Search-App",
+          "totalStars": "0",
+        },
+        "description": "Web Storage Manager is a simple web application that demonstrates how to store, retrieve, and manage data in a browser's local and session storage.",
+        "tagsList": ["JS DOM","JavaScript", "HTML", "CSS", "Web App"],
+        "live_links": "https://webstoragemanager.netlify.app/",
+        "source_code" : "https://github.com/jharnakhatun2/Image-Search-App"
+      },
+      {
+        "id" : "8",
+        "tags": ["landingpage","html"],
+        "image": "https://i.ibb.co.com/25zRjJD/matchmaster.png",
+        "title":" PlayBudget App",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/best-five-dom_repo?tab=readme-ov-file",
+          "totalStars": "1",
+        },
+        "description": "You can Easily add match players and cricket tournament management system running cost by PlayBudget App",
+        "tagsList": ["JS DOM","JavaScript", "HTML", "CSS", "Web App"],
+        "live_links": "https://choice-your-top-players.netlify.app/",
+        "source_code" : "https://github.com/jharnakhatun2/best-five-dom_repo?tab=readme-ov-file"
+      },
+      {
+        "id" : "9",
+        "tags": ["landingpage","html"],
+        "image": "https://i.ibb.co.com/bvbGVph/travelzone.png",
+        "title":" Tour booking App",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/travel-xone",
+          "totalStars": "0",
+        },
+        "description": "A tour booking app is a digital platform that allows users to explore, plan, and book travel experiences and tours.",
+        "tagsList": ["Next.js","Node.js", "MongoDB", " Web Development", "Web App"],
+        "live_links": "https://travel-xone-2023.vercel.app/",
+        "source_code" : "https://github.com/jharnakhatun2/travel-xone"
+      },
+      {
+        "id" : "10",
+        "tags": ["javascript","jsdom"],
+        "image": "https://i.ibb.co.com/NN9wMbN/areaCM.png",
+        "title":" Geometry Area Calculation Manager",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/geometry-area-calculator",
+          "totalStars": "0",
+        },
+        "description": "It's a JavaScript-based project that provides an interactive interface for calculating areas of various geometry shapes.",
+        "tagsList": ["JavaScript","HTML", "CSS", " Tailwind", "Daisy UI"],
+        "live_links": "https://area-calculator-manager.netlify.app/",
+        "source_code" : "https://github.com/jharnakhatun2/geometry-area-calculator"
+      },
+      {
+        "id" : "11",
+        "tags": ["javascript","jsdom"],
+        "image": "https://i.ibb.co.com/CwqhnJH/alphabet-game.png",
+        "title":"Alphabet Clash Pro Game",
+        "date": 'new Date()',
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/alphabet-clash",
+          "totalStars": "0",
+        },
+        "description": " Alphabet Clash Pro is a challenging, fast-paced puzzle game designed to test your reflexes and pattern recognition skills. Play in window / PC.",
+        "tagsList": ["JavaScript","HTML", "CSS", " Tailwind", "Daisy UI"],
+        "live_links": "https://alphabet-match-game.netlify.app/",
+        "source_code" : "https://github.com/jharnakhatun2/alphabet-clash"
+      },
 ]
+export default projects;

@@ -1,8 +1,14 @@
 import React from "react"
+import projects from '../../data/projects'
 
 const Card = () => {
+ 
+    
     return (
-        <div
+       <>
+       {
+        projects.map(project=> (
+<div
             data-tags="dom,javascript"
             className="projectCard bg-stone-500 shadow-md border border-white rounded-lg max-w-sm "
         >
@@ -178,6 +184,10 @@ const Card = () => {
                 </div>
             </div>
         </div>
+        ))
+    }
+        
+        </>
     )
 };
 
