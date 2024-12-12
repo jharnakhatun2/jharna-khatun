@@ -78,7 +78,7 @@ const Projects = () => {
     <div className="flex justify-center mt-10 w-full">
       <button
         id="view-more"
-        className="border font-bold border-white hover:border-neutral rounded bg-zinc-400 hover:bg-white text-black text-sm transition-all py-2 px-5"
+        className="border border-white hover:border-stone-500 hover:text-stone-500 rounded bg-stone-500 hover:bg-white text-white text-sm transition-all py-2 px-5 uppercase font-bold"
       >
         View More
       </button>
