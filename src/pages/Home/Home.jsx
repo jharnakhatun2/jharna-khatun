@@ -1,5 +1,4 @@
 import React from "react";
-import Navigation from "../../components/Navigation/Navigation";
 import HomeContent from "../../components/HomeContent/HomeContent";
 import SocialIcon from "../../components/HomeContent/SocialIcon";
 
