@@ -1,6 +1,8 @@
 import React from "react"
+import {expertise, comfortable, familiar, tools} from '../../data/about';
 
 const About = () => {
+  console.log(expertise)
   return (
     <main className="container mx-auto py-8 px-8 lg:px-0">
   <h1 className="text-3xl mb-6 uppercase font-extrabold">MY SKILLS</h1>
@@ -10,21 +12,37 @@ const About = () => {
       {/* Skill dynamic buttons */}
       <div className="my-6">
         <h2 className="text-lg mb-1 uppercase font-semibold">Expertise :</h2>
-        <div id="btn" className="btn flex flex-row flex-wrap" />
+        {expertise.map((item,index) => (
+          <button key={index} className="skillBtn">
+          {item}
+          </button>
+        ))}
       </div>
       <div className="my-6">
         <h2 className="text-lg mb-1 uppercase font-semibold">Comfortable :</h2>
-        <div id="btn1" className="flex flex-row flex-wrap" />
+        {comfortable.map((item,index) => (
+          <button key={index} className="skillBtn">
+          {item}
+          </button>
+        ))}
       </div>
       <div className="my-6">
         <h2 className="text-lg mb-1 uppercase font-semibold">
           Familiar with :
         </h2>
-        <div id="btn2" className="flex flex-row flex-wrap" />
+        {familiar.map((item,index) => (
+          <button key={index} className="skillBtn">
+          {item}
+          </button>
+        ))}
       </div>
       <div className="my-6">
         <h2 className="text-lg mb-1 uppercase font-semibold">Tools :</h2>
-        <div id="btn3" className="flex flex-row flex-wrap" />
+        {tools.map((item,index) => (
+          <button key={index} className="skillBtn">
+          {item}
+          </button>
+        ))}
       </div>
     </div>
     {/* skill image Start*/}

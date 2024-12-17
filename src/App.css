@@ -4,10 +4,7 @@ html, body {
   height: 100%;
   font-family: "Inter", sans-serif;
 }
-* {
-  box-sizing: border-box;
-}
-body {
+#root {
   background: url("https://i.ibb.co.com/Mh8ftjv/1.webp") no-repeat fixed center ;
   background-size: cover;
 }

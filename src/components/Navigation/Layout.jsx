@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="h-screen grid content-stretch">
+    <div>
     <Navigation/>
     <main>
         <Outlet/>
