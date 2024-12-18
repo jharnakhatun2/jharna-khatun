@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  const location = useLocation();
   return (
     <>
       {/*----------- small navbar ---------------*/}
@@ -60,21 +61,21 @@ const Navigation = () => {
           <nav className="contents text-base lg:text-md">
             <ul className="mx-auto flex items-center">
               <li className="p-5 xl:p-8 ">
-                <Link to="/">Home</Link>
+                <Link to="/" style={{ color: location.pathname === '/' ? '#7fa0c0' : 'black' }}>Home</Link>
               </li>
               <li className="p-5 xl:p-8 ">
-                <Link to="/about">About</Link>
+                <Link to="/about" style={{ color: location.pathname === '/about' ? '#7fa0c0' : 'black' }}>About</Link>
               </li>
               <li className="p-5 xl:p-8 ">
-                <Link to="/projects">Projects</Link>
+                <Link to="/projects" style={{ color: location.pathname === '/projects' ? '#7fa0c0' : 'black' }}>Projects</Link>
               </li>
               <li className="p-5 xl:p-8 ">
-                <Link to="/blogs">Blogs</Link>
+                <Link to="/blogs" style={{ color: location.pathname === '/blogs' ? '#7fa0c0' : 'black' }}>Blogs</Link>
               </li>
             </ul>
           </nav>
           <div>
-          <Link to="/contact" className="border border-white rounded-full font-bold px-8 py-3 hover:border-transparent hover:bg-zinc-400 hover:text-white transition-all">Contact me</Link>
+          <Link to="/contact" className="border border-white rounded-full font-bold px-8 py-3 hover:border-transparent hover:bg-zinc-400 hover:text-white transition-all" style={{ color: location.pathname === '/contact' ? '#7fa0c0' : 'black' }}>Contact me</Link>
           </div>
         </div>
       </header>
