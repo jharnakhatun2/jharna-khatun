@@ -2,7 +2,7 @@ import React from "react"
 
 const SocialIcon = () => {
   return (
-    <div className="flex justify-center pt-10">
+    <div className="flex justify-center pt-16">
       <ul className="flex flex-row flex-wrap justify-start pl-3">
         <li className="flex flex-row items-center last:mr-0 mr-4 mb-2">
           <a

@@ -58,12 +58,12 @@ const ProfileInfo = () => {
           <ul className="flex flex-row flex-wrap">
             <li className="flex flex-row items-center last:mr-0 mr-2 mb-2">
               <span className="inline-block bg-neutral-400 rounded-sm px-2 py-1 text-xs font-normal last:mr-0">
-                Front-End
+              JavaScript
               </span>
             </li>
             <li className="flex flex-row items-center last:mr-0 mr-2 mb-2">
               <span className="inline-block bg-neutral-400 rounded-sm px-2 py-1 text-xs font-normal last:mr-0">
-                JavaScript
+                Front-End
               </span>
             </li>
             <li className="flex flex-row items-center last:mr-0 mr-2 mb-2">

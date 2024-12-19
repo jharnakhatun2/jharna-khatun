@@ -7,9 +7,9 @@ const Card = () => {
     return (
         <>
             {
-                projects.map(project => (
-                    <div
-                        data-tags={project.tags.map(item => console.log(item))}
+                projects.map((project, index) => (
+                    <div key={index}
+                        data-tags={project.tags.map(item => item)}
                         className="projectCard bg-stone-500 shadow-md border border-white rounded-lg max-w-sm "
                     >
                         <div className="h-[255px] w-full">
@@ -89,8 +89,8 @@ const Card = () => {
                                 <div className="tags">
                                     <ul className="flex flex-row flex-wrap">
                                         {
-                                            project?.tagsList.map((tag) => (
-                                                <li className="flex flex-row items-center last:mr-0 mr-2 mb-2">
+                                            project?.tagsList.map((tag, index) => (
+                                                <li key={index} className="flex flex-row items-center last:mr-0 mr-2 mb-2">
                                                     <span className="inline-block bg-zinc-400 rounded-sm px-2 py-1 text-xs font-normal">
                                                         {tag}
                                                     </span>

@@ -6,9 +6,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{html,js,jsx}",
   ],
-  theme: {
-    
-  },
+  theme: {},
   plugins: [require('daisyui')],
   daisyui: {
     themes: ["light", "dark", "wireframe", "nord"],

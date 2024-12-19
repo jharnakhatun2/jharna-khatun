@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <>
       {/*----------- small navbar ---------------*/}
-      <header className="bg-white bg-opacity-5  block md:hidden">
+      <header className="bg-white container mx-auto bg-opacity-5  block md:hidden">
         <div className="container mx-auto flex items-center justify-between h-14">
           <a href="index.html" className="flex items-center justify-center">
             <span className="ml-4 uppercase font-black">JHARNA KHATUN</span>
@@ -52,8 +52,8 @@ const Navigation = () => {
         </ul>
       </nav>
       {/*----------- large navbar ---------------*/}
-      <header className="hidden md:block  bg-white bg-opacity-5 px-5">
-        <div className="container mx-auto flex items-center h-16">
+      <header className="hidden container mx-auto md:block  bg-white bg-opacity-5 px-5">
+        <div className="flex items-center h-16">
         <div>
           <Link to="/" className="uppercase font-black">JHARNA KHATUN</Link>
           </div>

@@ -4,7 +4,7 @@ import Categories from "../../components/Blogs/Categories";
 
 const Blogs = () => {
   return (
-    <main className="container mx-auto py-8 px-8 lg:px-0">
+    <main className="container mx-auto py-8 px-5">
   {/* header and total blogs  */}
   <div className="flex flex-row items-center">
     <h1 className="text-3xl mb-6 uppercase font-extrabold">Blog</h1>
