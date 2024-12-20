@@ -10,8 +10,8 @@ const Blogs = () => {
     <h1 className="text-3xl mb-6 uppercase font-extrabold">Blog</h1>
     <div
       id="blogCount"
-      className="bg-gray text-white px-1 rounded text-xs ml-3 self-start"
-    ></div>
+      className="bg-white text-primary px-1 rounded text-xs ml-3 self-start"
+    >3</div>
   </div>
   {/* Page-specific content goes here */}
   {/* sidebar */}

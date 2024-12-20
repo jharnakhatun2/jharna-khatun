@@ -15,7 +15,7 @@ const Projects = () => {
             <h1 className="text-3xl mb-6 uppercase font-extrabold">Projects</h1>
             <div
               id="projectCount"
-              className="bg-gray text-primary px-1 rounded text-xs ml-3 self-start"
+              className="bg-white text-primary px-1 rounded text-xs ml-3 self-start"
             >
               23
             </div>
