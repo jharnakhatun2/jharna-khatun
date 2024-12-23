@@ -7,7 +7,8 @@ export const expertise = [
     "DaisyUI",
     "ReactBootstrap",
     "Responsive website",
-    "Bootstrap,HTML5",
+    "Bootstrap",
+    "HTML5",
     "CSS3",
     "SCSS",
   ];

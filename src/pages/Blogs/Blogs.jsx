@@ -1,6 +1,7 @@
 import React from "react"
 import SocialIcon from "../../components/HomeContent/SocialIcon";
 import Categories from "../../components/Blogs/Categories";
+import Post from "../../components/Blogs/Post";
 
 const Blogs = () => {
   return (
@@ -46,142 +47,7 @@ const Blogs = () => {
       {/* Blog Cards */}
       <div className="blog-container">
         {/* Blog Card */}
-        <div
-          data-tags="javascript"
-          className="blogCard max-w-4xl px-10 my-4 py-6 bg-white rounded-lg shadow-md"
-        >
-          <div className="flex justify-between items-center">
-            <span className="font-light text-gray">Sep 18, 2024</span>
-            <p className="text-sm px-2 py-1 bg-zinc-500 text-white font-bold rounded hover:bg-gray">
-              Javascript
-            </p>
-          </div>
-          <div className="mt-2">
-            <a
-              className="title text-2xl font-bold hover:text-secondary"
-              href="https://jharnakhatun.medium.com/the-debounce-technique-for-javascript-form-validation-91d39f3fad46"
-              target="_blank"
-            >
-              The debounce technique for JavaScript form validation
-            </a>
-            <p className="description mt-2 text-gray text-justify">
-              We use the debounce technique for JavaScript form validation to
-              prevent excessive validation calls, improve performance, reduce
-              network/API calls and more.
-            </p>
-          </div>
-          <div className="flex justify-between items-center mt-4">
-            <a
-              className="read-more text-secondary hover:underline"
-              href="https://jharnakhatun.medium.com/the-debounce-technique-for-javascript-form-validation-91d39f3fad46"
-              target="_blank"
-            >
-              Read more
-            </a>
-            <div>
-              <a className="flex items-center" href="#">
-                <img
-                  className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"
-                  src="https://i.ibb.co.com/G29Bn3G/profile.png"
-                  alt="avatar"
-                />
-                <h1 className="text-gray-700 font-bold text-sm">Jharna Khatun</h1>
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* Blog Card */}
-        <div
-          data-tags="next"
-          className="blogCard max-w-4xl px-10 my-4 py-6 bg-white rounded-lg shadow-md"
-        >
-          <div className="flex justify-between items-center">
-            <span className="font-light text-gray">Oct 18, 2024</span>
-            <p className="text-sm px-2 py-1 bg-neutral text-white font-bold rounded hover:bg-gray">
-              js DOM
-            </p>
-          </div>
-          <div className="mt-2">
-            <a
-              className="title text-2xl font-bold hover:text-gray"
-              href="https://dev.to/jharna_khatun/what-is-a-batch-dom-update-and-why-is-it-useful-d3k"
-              target="_blank"
-            >
-              What is a Batch DOM update and Why is it useful?
-            </a>
-            <p className="description mt-2 text-gray text-justify">
-              Batching DOM updates refers to making multiple changes to the DOM
-              in a way that reduces the number of reflows and repaints, which
-              are costly operations for the browser.
-            </p>
-          </div>
-          <div className="flex justify-between items-center mt-4">
-            <a
-              className="text-secondary hover:underline"
-              href="https://dev.to/jharna_khatun/what-is-a-batch-dom-update-and-why-is-it-useful-d3k"
-              target="_blank"
-            >
-              Read more
-            </a>
-            <div>
-              <a className="flex items-center" href="#">
-                <img
-                  className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"
-                  src="https://i.ibb.co.com/G29Bn3G/profile.png"
-                  alt="avatar"
-                />
-                <h1 className="text-gray-700 font-bold">Jharna Khatun</h1>
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* Blog Card */}
-        <div
-          data-tags="jsdom"
-          className="blogCard max-w-4xl px-10 my-4 py-6 bg-white rounded-lg shadow-md"
-        >
-          <div className="flex justify-between items-center">
-            <span className="font-light text-gray">Oct 18, 2024</span>
-            <p className="text-sm px-2 py-1 bg-neutral text-white font-bold rounded hover:bg-gray">
-              Js DOM
-            </p>
-          </div>
-          <div className="mt-2">
-            <a
-              className="title text-2xl font-bold hover:text-gray"
-              href="https://dev.to/jharna_khatun/reflows-and-repaints-in-javascript-2ep1"
-              target="_blank"
-            >
-              What are the best practices for optimizing CSS to reduce
-              unnecessary reflows and repaints, especially in large-scale
-              applications?
-            </a>
-            <p className="description mt-2 text-gray text-justify">
-              A reflow (also called layout or re-layout) occurs when the browser
-              recalculates the position, size, and layout of elements on the
-              page.
-            </p>
-          </div>
-          <div className="flex justify-between items-center mt-4">
-            <a
-              className="text-secondary hover:underline"
-              href="https://dev.to/jharna_khatun/reflows-and-repaints-in-javascript-2ep1"
-              target="_blank"
-            >
-              Read more
-            </a>
-            <div>
-              <a className="flex items-center" href="#">
-                <img
-                  className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"
-                  src="https://i.ibb.co.com/G29Bn3G/profile.png"
-                  alt="avatar"
-                />
-                <h1 className="text-gray-700 font-bold">Jharna Khatun</h1>
-              </a>
-            </div>
-          </div>
-        </div>
+        <Post/>
         {/* search missing content */}
         <div className="no-results hidden mt-8">
           <p className="font-bold ">No blogs found matching your search.</p>
