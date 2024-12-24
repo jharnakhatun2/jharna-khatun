@@ -30,6 +30,22 @@ export const blogs = [
         "title": "Mastering React Performance by useMemo Hook",
         "href": "https://medium.com/@jharnakhatun/mastering-react-performance-by-usememo-hook-b8e7a404de15",
         "description": "The useMemo hook in React is used to optimize performance by memoizing (remembering) the result of a computation so that it doesn't need to be recalculated unnecessarily."
+    },
+    {
+        "id": "5",
+        "date": "Dec 24, 2024",
+        "tag": "React.js",
+        "title": "Boost Performance with Memoized Functions by useCallback in React",
+        "href": "https://medium.com/@jharnakhatun/boost-performance-with-memoized-functions-by-usecallback-in-react-1c4ba07891bc",
+        "description": "useCallback is a React Hook used to memoize functions, which means it ensures that a function doesn’t get re-created unless its dependencies change."
+    },
+    {
+        "id": "6",
+        "date": "Dec 24, 2024",
+        "tag": "React.js",
+        "title": "Simplify and Reuse Your Component Logic by Custom Hook in React.js",
+        "href": "https://medium.com/@jharnakhatun/simplify-and-reuse-your-component-logic-by-custom-hook-in-react-js-5f1038f4a0db",
+        "description": "A custom hook in React is a JavaScript function that lets you extract reusable logic from components."
     }
       
 ]

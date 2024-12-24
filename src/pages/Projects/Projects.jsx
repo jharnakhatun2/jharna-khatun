@@ -1,7 +1,7 @@
 import React from "react"
 import Card from "../../components/Card/Card";
-import Select from "./CustomSelect";
 import CustomSelect from "./CustomSelect";
+import projects from '../../data/projects';
 
 const Projects = () => {
   return (
@@ -15,9 +15,9 @@ const Projects = () => {
             <h1 className="text-3xl mb-6 uppercase font-extrabold">Projects</h1>
             <div
               id="projectCount"
-              className="bg-white text-primary px-1 rounded text-xs ml-3 self-start"
+              className="bg-white text-blue-400 px-2 rounded text-sm ml-3 self-start"
             >
-              23
+             {projects.length}
             </div>
           </div>
           <div className="sm:flex flex-row items-center mb-6 justify-between">

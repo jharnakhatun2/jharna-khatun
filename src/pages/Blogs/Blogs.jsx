@@ -2,6 +2,7 @@ import React from "react"
 import SocialIcon from "../../components/HomeContent/SocialIcon";
 import Categories from "../../components/Blogs/Categories";
 import Post from "../../components/Blogs/Post";
+import { blogs } from "../../data/blog";
 
 const Blogs = () => {
   return (
@@ -11,8 +12,8 @@ const Blogs = () => {
     <h1 className="text-3xl mb-6 uppercase font-extrabold">Blog</h1>
     <div
       id="blogCount"
-      className="bg-white text-primary px-1 rounded text-xs ml-3 self-start"
-    >3</div>
+      className="bg-white text-blue-400 px-2 rounded text-sm ml-3 self-start"
+    >{blogs.length}</div>
   </div>
   {/* Page-specific content goes here */}
   {/* sidebar */}
