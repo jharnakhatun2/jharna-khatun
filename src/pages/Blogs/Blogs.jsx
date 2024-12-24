@@ -12,7 +12,7 @@ const Blogs = () => {
     <h1 className="text-3xl mb-6 uppercase font-extrabold">Blog</h1>
     <div
       id="blogCount"
-      className="bg-white text-blue-400 px-2 rounded text-sm ml-3 self-start"
+      className="bg-zinc-500 text-white px-1 rounded text-xs ml-3 self-start"
     >{blogs.length}</div>
   </div>
   {/* Page-specific content goes here */}
@@ -25,7 +25,7 @@ const Blogs = () => {
         <div className="grid place-items-center h-full w-12 text-gray">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 text-zinc-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

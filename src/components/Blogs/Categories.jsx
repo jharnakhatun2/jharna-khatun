@@ -9,7 +9,7 @@ const Categories = () => {
                 categories.map((item, index) => (
                     <button key={index}
                         value="html"
-                        className="sort-btn bg-zinc-500 py-1 px-2 rounded border border-zinc-500 hover:border-white hover:bg-opacity-0 text-white hover:text-primary transition-colors"
+                        className="sort-btn bg-zinc-400 py-1 px-2 rounded border border-zinc-400 hover:border-white hover:bg-opacity-0 text-white hover:text-blue-400 transition-colors"
                     >
                         {item}
                     </button>
