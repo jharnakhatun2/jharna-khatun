@@ -1,10 +1,11 @@
 import React from "react"
-import { blogs } from "../../data/blog";
 
-const Post = () => {
+const Post = ({blogs}) => {
+  const recentPosts = [...blogs]
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
   return (
     <div>
-      {blogs.map(blog => (
+      {recentPosts.map(blog => (
         <div key={blog.id}
         data-tags="javascript"
         className="blogCard max-w-4xl px-10 my-4 py-6 bg-white rounded-lg shadow-md"

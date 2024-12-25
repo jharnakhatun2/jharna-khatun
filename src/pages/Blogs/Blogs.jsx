@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import SocialIcon from "../../components/HomeContent/SocialIcon";
 import Categories from "../../components/Blogs/Categories";
 import Post from "../../components/Blogs/Post";
@@ -6,6 +6,18 @@ import { blogs } from "../../data/blog";
 import RecentPost from "../../components/Blogs/RecentPost";
 
 const Blogs = () => {
+  const [filteredBlogs, setFilteredBlogs] = useState(blogs);
+   
+  // Handle category selection
+   const handleCategorySelect = (category) => {
+    if (category === "All") {
+      // Show all blogs
+        setFilteredBlogs(blogs); 
+    } else {
+      // Filter blogs by category
+        setFilteredBlogs(blogs.filter((blog) => blog.tag === category)); 
+    }
+};
   return (
     <main className="container mx-auto py-8 px-5">
   {/* header and total blogs  */}
@@ -14,7 +26,7 @@ const Blogs = () => {
     <div
       id="blogCount"
       className="bg-zinc-500 text-white px-1 rounded text-xs ml-3 self-start"
-    >{blogs.length}</div>
+    >{filteredBlogs.length}</div>
   </div>
   {/* Page-specific content goes here */}
   {/* sidebar */}
@@ -49,7 +61,7 @@ const Blogs = () => {
       {/* Blog Cards */}
       <div className="blog-container">
         {/* Blog Card */}
-        <Post/>
+        <Post blogs={filteredBlogs}/>
         {/* search missing content */}
         <div className="no-results hidden mt-8">
           <p className="font-bold ">No blogs found matching your search.</p>
@@ -60,7 +72,7 @@ const Blogs = () => {
     <div className="right-sidebar w-full md:w-3/12 ">
       <h1 className="text-lg uppercase font-bold">Categories</h1>
       {/* categories */}
-      <Categories/>
+      <Categories blogs={blogs} onCategorySelect={handleCategorySelect}/>
       {/* Recent post */}
       <div className="my-8">
         <h1 className="text-lg uppercase font-bold">Recent Posts</h1>
