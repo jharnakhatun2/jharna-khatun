@@ -2,8 +2,8 @@ import React from "react"
 
 const SocialIcon = () => {
   return (
-    <div className="flex justify-center pt-16">
-      <ul className="flex flex-row flex-wrap justify-start pl-3">
+    <div className="flex justify-center">
+      <ul className="flex flex-row flex-wrap justify-start">
         <li className="flex flex-row items-center last:mr-0 mr-4 mb-2">
           <a
             href="https://www.linkedin.com/in/jharna-khatun2/"

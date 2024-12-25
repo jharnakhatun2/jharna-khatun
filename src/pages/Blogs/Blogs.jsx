@@ -3,6 +3,7 @@ import SocialIcon from "../../components/HomeContent/SocialIcon";
 import Categories from "../../components/Blogs/Categories";
 import Post from "../../components/Blogs/Post";
 import { blogs } from "../../data/blog";
+import RecentPost from "../../components/Blogs/RecentPost";
 
 const Blogs = () => {
   return (
@@ -61,11 +62,9 @@ const Blogs = () => {
       {/* categories */}
       <Categories/>
       {/* Recent post */}
-      <div className="mt-8">
+      <div className="my-8">
         <h1 className="text-lg uppercase font-bold">Recent Posts</h1>
-        <ul id="recent-posts-list" className="divide-y divide-gray font-light">
-          {/* 4 most recent posts will be dynamically inserted here */}
-        </ul>
+        <RecentPost/>
       </div>
       {/* social Icons Start*/}
       <div className="flex">
