@@ -19,7 +19,7 @@ const projects = [
         "tags": ["dom"],
         "image": "https://i.ibb.co.com/tYDRd8T/form-Validation.png",
         "title":"Dynamic Form Validation",
-        "date": 'Oct 2024',
+        "date": 'Dec 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/javascript-form-validation",
           "totalStars": "65",
@@ -34,7 +34,7 @@ const projects = [
         "tags": ["html"],
         "image": "https://i.ibb.co.com/r3XGkmd/framework-Manager.png",
         "title":"Framework Manager",
-        "date": 'Oct 2024',
+        "date": 'Nov 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/framework-manager",
           "totalStars": "65",
@@ -49,7 +49,7 @@ const projects = [
         "tags": ["react"],
         "image": "https://i.ibb.co.com/ky8tzBn/realestate-ai.png",
         "title":"AI Property Listings Generator",
-        "date": 'Oct 2024',
+        "date": 'Nov 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/real-estate-ai",
           "totalStars": "8",
@@ -64,7 +64,7 @@ const projects = [
         "tags": ["html"],
         "image": "https://i.ibb.co.com/gtm4jk5/landingpage.png",
         "title":"Portable Charger",
-        "date": 'Oct 2024',
+        "date": 'Sep 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/portable-charger",
           "totalStars": "8",
@@ -79,7 +79,7 @@ const projects = [
         "tags": ["react"],
         "image": "https://i.ibb.co.com/dkVVgtz/image-search-app.png",
         "title":"IMAGE SEARCH APP",
-        "date": 'Oct 2024',
+        "date": 'Nov 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/Image-Search-App",
           "totalStars": "0",
@@ -110,7 +110,7 @@ const projects = [
         "tags": ["javascript"],
         "image": "https://i.ibb.co.com/25zRjJD/matchmaster.png",
         "title":" PlayBudget App",
-        "date": 'Oct 2024',
+        "date": 'Dec 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/best-five-dom_repo?tab=readme-ov-file",
           "totalStars": "1",
@@ -140,7 +140,7 @@ const projects = [
         "tags": ["jsdom"],
         "image": "https://i.ibb.co.com/NN9wMbN/areaCM.png",
         "title":" Geometry Area Calculation Manager",
-        "date": 'Oct 2024',
+        "date": 'Nov 2024',
         "stars": {
           "href": "https://github.com/jharnakhatun2/geometry-area-calculator",
           "totalStars": "0",

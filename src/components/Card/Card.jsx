@@ -1,13 +1,14 @@
 import React from "react"
+import { sortedPosts } from "../../ultf/utility";
 
 
 const Card = ({filterProjects}) => {
 
-
+const lastInFirstProject = sortedPosts(filterProjects);
     return (
         <>
             {
-                filterProjects.map((project, index) => (
+                lastInFirstProject.map((project, index) => (
                     <div key={index}
                         data-tags={project.tags.map(item => item)}
                         className="projectCard bg-stone-500 shadow-md border border-white rounded-lg max-w-sm "

@@ -1,8 +1,8 @@
 import React from "react"
+import { sortedPosts } from "../../ultf/utility";
 
 const Post = ({blogs}) => {
-  const recentPosts = [...blogs]
-      .sort((a, b) => new Date(b.date) - new Date(a.date))
+  const recentPosts = sortedPosts(blogs);
   return (
     <div>
       {recentPosts.map(blog => (
