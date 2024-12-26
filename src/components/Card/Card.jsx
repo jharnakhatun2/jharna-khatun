@@ -1,13 +1,13 @@
 import React from "react"
-import projects from '../../data/projects'
 
-const Card = () => {
+
+const Card = ({filterProjects}) => {
 
 
     return (
         <>
             {
-                projects.map((project, index) => (
+                filterProjects.map((project, index) => (
                     <div key={index}
                         data-tags={project.tags.map(item => item)}
                         className="projectCard bg-stone-500 shadow-md border border-white rounded-lg max-w-sm "

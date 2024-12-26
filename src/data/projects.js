@@ -1,7 +1,7 @@
 const projects = [
     {
         "id" : "1",
-        "tags": ["dom", "javascript"],
+        "tags": ["javascript"],
         "image": "https://i.ibb.co.com/P59sdRF/quiz.png",
         "title":"JavaScript Quiz Game",
         "date": 'Oct 2024',
@@ -16,7 +16,7 @@ const projects = [
       },
     {
         "id" : "2",
-        "tags": ["javascript","dom"],
+        "tags": ["dom"],
         "image": "https://i.ibb.co.com/tYDRd8T/form-Validation.png",
         "title":"Dynamic Form Validation",
         "date": 'Oct 2024',
@@ -31,7 +31,7 @@ const projects = [
       },
     {
         "id" : "3",
-        "tags": ["javascript","dom"],
+        "tags": ["html"],
         "image": "https://i.ibb.co.com/r3XGkmd/framework-Manager.png",
         "title":"Framework Manager",
         "date": 'Oct 2024',
@@ -46,7 +46,7 @@ const projects = [
       },
       {
         "id" : "4",
-        "tags": ["javascript","dom"],
+        "tags": ["react"],
         "image": "https://i.ibb.co.com/ky8tzBn/realestate-ai.png",
         "title":"AI Property Listings Generator",
         "date": 'Oct 2024',
@@ -61,7 +61,7 @@ const projects = [
       },
       {
         "id" : "5",
-        "tags": ["landingpage","html"],
+        "tags": ["html"],
         "image": "https://i.ibb.co.com/gtm4jk5/landingpage.png",
         "title":"Portable Charger",
         "date": 'Oct 2024',
@@ -76,7 +76,7 @@ const projects = [
       },
       {
         "id" : "6",
-        "tags": ["landingpage","html"],
+        "tags": ["react"],
         "image": "https://i.ibb.co.com/dkVVgtz/image-search-app.png",
         "title":"IMAGE SEARCH APP",
         "date": 'Oct 2024',
@@ -92,7 +92,7 @@ const projects = [
 
       {
         "id" : "7",
-        "tags": ["landingpage","html"],
+        "tags": ["landing page"],
         "image": "https://i.ibb.co.com/K0BWTWy/strage.png",
         "title":" Web Storage Manager",
         "date": 'Oct 2024',
@@ -107,7 +107,7 @@ const projects = [
       },
       {
         "id" : "8",
-        "tags": ["landingpage","html"],
+        "tags": ["javascript"],
         "image": "https://i.ibb.co.com/25zRjJD/matchmaster.png",
         "title":" PlayBudget App",
         "date": 'Oct 2024',
@@ -122,7 +122,7 @@ const projects = [
       },
       {
         "id" : "9",
-        "tags": ["landingpage","html"],
+        "tags": ["next"],
         "image": "https://i.ibb.co.com/bvbGVph/travelzone.png",
         "title":" Tour booking App",
         "date": 'Oct 2024',
@@ -137,7 +137,7 @@ const projects = [
       },
       {
         "id" : "10",
-        "tags": ["javascript","jsdom"],
+        "tags": ["jsdom"],
         "image": "https://i.ibb.co.com/NN9wMbN/areaCM.png",
         "title":" Geometry Area Calculation Manager",
         "date": 'Oct 2024',
@@ -152,7 +152,7 @@ const projects = [
       },
       {
         "id" : "11",
-        "tags": ["javascript","jsdom"],
+        "tags": ["javascript"],
         "image": "https://i.ibb.co.com/CwqhnJH/alphabet-game.png",
         "title":"Alphabet Clash Pro Game",
         "date": 'Oct 2024',

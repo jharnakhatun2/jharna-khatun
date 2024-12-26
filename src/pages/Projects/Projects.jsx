@@ -1,9 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 import Card from "../../components/Card/Card";
 import CustomSelect from "./CustomSelect";
 import projects from '../../data/projects';
 
 const Projects = () => {
+  const [filterProjects, setFilterProjects] = useState(projects);
+
+  const handleCategorySort = (category) =>{
+    if(!category){
+      setFilterProjects(projects);
+    }else{
+      setFilterProjects(
+        projects.filter((project) =>
+          project.tags.some((tag) => tag.toLowerCase() === category.toLowerCase())
+        )
+      );
+    }
+  }
+
   return (
     <>
       {/*------------- Project Page ---------------*/}
@@ -17,14 +31,14 @@ const Projects = () => {
               id="projectCount"
               className="bg-white text-blue-400 px-2 rounded text-sm ml-3 self-start"
             >
-             {projects.length}
+             {filterProjects.length}
             </div>
           </div>
           <div className="sm:flex flex-row items-center mb-6 justify-between">
             {/*----------- Sorting ------------*/}
             <div className="flex flex-row items-center">
               <div className="text-sm text-gray-500 mr-1">Sort by:</div>
-              <CustomSelect />
+              <CustomSelect handleCategorySort={handleCategorySort}/>
             </div>
             {/* search bar */}
             <div className="relative flex items-center sm:w-2/12 h-10 rounded-lg focus-within:shadow-lg bg-white overflow-hidden mt-3 sm:mt-0">
@@ -55,15 +69,13 @@ const Projects = () => {
         </div>
         {/* Page-specific content goes here */}
         <div className="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-12 justify-items-center">
-          {/* Project Card*/}
-          <Card />
-
-          {/* Message to show when no results are found */}
-          <div className="no-results hidden">
-            <p className="font-bold bg-zinc-400 px-9 py-7">
-              No projects found matching your search.
-            </p>
-          </div>
+        {filterProjects.length > 0 ? <Card filterProjects={filterProjects} /> : (
+            <div className="no-results">
+              <p className="font-bold bg-zinc-400 px-9 py-7">
+                No projects found matching your search.
+              </p>
+            </div>
+          )}
         </div>
         {/* bottom */}
         <div className="flex justify-center mt-10 w-full">

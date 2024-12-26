@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-function CustomSelect() {
+function CustomSelect({ handleCategorySort }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("JavaScript");
+  const [selectedOption, setSelectedOption] = useState("");
 
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
@@ -11,19 +11,20 @@ function CustomSelect() {
   const handleOptionClick = (option) => {
     setSelectedOption(option);
     setIsOpen(false);
+    handleCategorySort(option);
   };
 
-  const options = ["JavaScript", "HTML", "CSS", "DOM", "React", "Next"];
+  const options = ["", "JavaScript", "HTML", "CSS", "DOM", "React", "Next"];
 
   return (
     <div className="custom-select">
-      {/* Dropdown Toggle */}
-      <div className="selected-option flex justify-between" onClick={handleToggle}>
-        {selectedOption}
+      <div
+        className="selected-option flex justify-between"
+        onClick={handleToggle}
+      >
+        {selectedOption || "Select Category"}
         <span className={`arrow ${isOpen ? "open" : ""}`}>&#9660;</span>
       </div>
-
-      {/* Options */}
       {isOpen && (
         <ul className="options">
           {options.map((option, index) => (
@@ -32,7 +33,7 @@ function CustomSelect() {
               className="option"
               onClick={() => handleOptionClick(option)}
             >
-              {option}
+              {option || "Select Category"}
             </li>
           ))}
         </ul>
