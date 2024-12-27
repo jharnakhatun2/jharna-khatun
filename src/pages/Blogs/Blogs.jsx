@@ -1,9 +1,7 @@
 import React, { useState } from "react"
-import SocialIcon from "../../components/HomeContent/SocialIcon";
-import Categories from "../../components/Blogs/Categories";
 import Post from "../../components/Blogs/Post";
 import { blogs } from "../../data/blog";
-import RecentPost from "../../components/Blogs/RecentPost";
+import RightSidebar from "./RightSidebar";
 
 const Blogs = () => {
   const [filteredBlogs, setFilteredBlogs] = useState(blogs);
@@ -69,20 +67,7 @@ const Blogs = () => {
       </div>
     </div>
     {/* right side */}
-    <div className="right-sidebar w-full md:w-3/12 ">
-      <h1 className="text-lg uppercase font-bold">Categories</h1>
-      {/* categories */}
-      <Categories blogs={blogs} onCategorySelect={handleCategorySelect}/>
-      {/* Recent post */}
-      <div className="my-8">
-        <h1 className="text-lg uppercase font-bold">Recent Posts</h1>
-        <RecentPost/>
-      </div>
-      {/* social Icons Start*/}
-      <div className="flex">
-        <SocialIcon/>
-      </div>
-    </div>
+    <RightSidebar blogs={blogs} handleCategorySelect={handleCategorySelect}/>
   </div>
 </main>
 
