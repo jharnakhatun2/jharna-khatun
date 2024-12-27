@@ -2,9 +2,11 @@ import React, { useState } from "react"
 import Card from "../../components/Card/Card";
 import CustomSelect from "./CustomSelect";
 import projects from '../../data/projects';
+import { searchFiltered } from "../../ultf/search";
 
 const Projects = () => {
   const [filterProjects, setFilterProjects] = useState(projects);
+  const [searchProject, setSearchProject] = useState("");
 
   const handleCategorySort = (category) =>{
     if(!category){
@@ -16,6 +18,15 @@ const Projects = () => {
         )
       );
     }
+  }
+
+  //Project search function 
+  const handleSearchProject = (e) =>{
+    const query = e.target.value;
+    setSearchProject(query);
+
+    const searchFilteredProject = searchFiltered(projects, query, ["title","description","tagsList","tags"]);
+    setFilterProjects(searchFilteredProject);
   }
 
   return (
@@ -63,6 +74,8 @@ const Projects = () => {
                 type="text"
                 id="search"
                 placeholder="Search something.."
+                value={searchProject}
+                onChange={handleSearchProject}
               />
             </div>
           </div>

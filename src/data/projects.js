@@ -89,7 +89,6 @@ const projects = [
         "live_links": "https://image-search-app-khaki.vercel.app/",
         "source_code" : "https://github.com/jharnakhatun2/Image-Search-App"
       },
-
       {
         "id" : "7",
         "tags": ["landing page"],

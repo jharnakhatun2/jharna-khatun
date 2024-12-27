@@ -1,9 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: "Inter", sans-serif;
 }
+
 #root {
   background: url("https://i.ibb.co.com/Mh8ftjv/1.webp") no-repeat fixed center ;
   background-size: cover;
