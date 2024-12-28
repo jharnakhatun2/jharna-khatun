@@ -38,9 +38,9 @@ const Blogs = () => {
       </div>
       {/* Page-specific content goes here */}
 
-      <div className="block md:flex gap-8">
+      <div className="block lg:flex gap-8">
         {/* Left Side */}
-        <div className="w-full md:w-9/12 ">
+        <div className="w-full lg:w-9/12 ">
           {/* search bar */}
           <div className="relative flex items-center w-full md:w-4/12 h-10 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
             <div className="grid place-items-center h-full w-12 text-gray">
@@ -69,13 +69,15 @@ const Blogs = () => {
             />
           </div>
           {/* Blog Cards */}
-          <div className="blog-container">
+          
+          <div className="blog-container ">
             {/* Blog Card */}
-            <Post blogs={filteredBlogs} />
-            {/* search missing content */}
-            <div className="no-results hidden mt-8">
-              <p className="font-bold ">No blogs found matching your search.</p>
+            {filteredBlogs.length > 0 ?  <Post blogs={filteredBlogs} /> : (
+              /* search missing content */
+              <div className="flex my-20 sm:mt-24 justify-center bg-secondary w-full sm:w-2/4 mx-auto py-5 text-white text-center">
+              <p className="font-bold text-xl lg:text-2xl">No blogs found matching your search.</p>
             </div>
+            )}
           </div>
         </div>
         {/* right side */}

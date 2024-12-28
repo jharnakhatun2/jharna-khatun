@@ -21,7 +21,7 @@ const RightSidebar = ({blogs, handleCategorySelect}) => {
   }, []);
   return (
     <div>
-      <div className={` ${isScrolled ? 'fixed top-10' : 'absolute'} w-full md:w-3/12 transition-all duration-300 `}>
+      <div className={` ${isScrolled ? 'lg:fixed lg:top-10' : 'absolute'} w-full lg:w-3/12 transition-all duration-300 `}>
       <h1 className="text-lg uppercase font-bold">Categories</h1>
       {/* categories */}
       <Categories blogs={blogs} onCategorySelect={handleCategorySelect}/>

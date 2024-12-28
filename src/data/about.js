@@ -3,6 +3,8 @@ export const expertise = [
     "ES6",
     "React.js",
     "Rest API",
+    "React Hook Form",
+    "React Formik Form",
     "Tailwind CSS",
     "DaisyUI",
     "ReactBootstrap",
