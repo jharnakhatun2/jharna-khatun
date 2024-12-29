@@ -8,10 +8,10 @@ const Projects = () => {
   const [filterProjects, setFilterProjects] = useState(projects);
   const [searchProject, setSearchProject] = useState("");
 
-  const handleCategorySort = (category) =>{
-    if(!category){
+  const handleCategorySort = (category) => {
+    if (!category) {
       setFilterProjects(projects);
-    }else{
+    } else {
       setFilterProjects(
         projects.filter((project) =>
           project.tags.some((tag) => tag.toLowerCase() === category.toLowerCase())
@@ -21,11 +21,11 @@ const Projects = () => {
   }
 
   //Project search function 
-  const handleSearchProject = (e) =>{
+  const handleSearchProject = (e) => {
     const query = e.target.value;
     setSearchProject(query);
 
-    const searchFilteredProject = searchFiltered(projects, query, ["title","description","tagsList","tags"]);
+    const searchFilteredProject = searchFiltered(projects, query, ["title", "description", "tagsList", "tags"]);
     setFilterProjects(searchFilteredProject);
   }
 
@@ -42,14 +42,14 @@ const Projects = () => {
               id="projectCount"
               className="bg-white text-blue-400 px-2 rounded text-sm ml-3 self-start"
             >
-             {filterProjects.length}
+              {filterProjects.length}
             </div>
           </div>
           <div className="sm:flex flex-row items-center mb-6 justify-between">
             {/*----------- Sorting ------------*/}
             <div className="flex flex-row items-center">
               <div className="text-sm text-gray-500 mr-1">Sort by:</div>
-              <CustomSelect handleCategorySort={handleCategorySort}/>
+              <CustomSelect handleCategorySort={handleCategorySort} />
             </div>
             {/* search bar */}
             <div className="relative flex items-center sm:w-2/12 h-10 rounded-lg focus-within:shadow-lg bg-white overflow-hidden mt-3 sm:mt-0">
@@ -81,15 +81,17 @@ const Projects = () => {
           </div>
         </div>
         {/* Page-specific content goes here */}
-        <div className="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-12 justify-items-center">
-        {filterProjects.length > 0 ? <Card filterProjects={filterProjects} /> : (
-            <div className="no-results">
-              <p className="font-bold bg-zinc-400 px-9 py-7">
+        {filterProjects.length > 0 ? (<div className="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-12 justify-items-center">
+          <Card filterProjects={filterProjects} />
+        </div>) : ( <div className="grid grid-cols-1 justify-items-center">
+            <div className="flex my-20 justify-center bg-secondary w-full lg:w-2/4 py-5 text-white text-center">
+              <p className="font-bold text-xl lg:text-2xl">
                 No projects found matching your search.
               </p>
             </div>
-          )}
-        </div>
+        </div>)}
+        
+       
         {/* bottom */}
         <div className="flex justify-center mt-10 w-full">
           <button
