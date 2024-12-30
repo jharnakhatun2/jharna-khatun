@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import Card from "../../components/Card/Card";
 import CustomSelect from "./CustomSelect";
 import projects from '../../data/projects';
@@ -7,6 +7,7 @@ import { searchFiltered } from "../../ultf/search";
 const Projects = () => {
   const [filterProjects, setFilterProjects] = useState(projects);
   const [searchProject, setSearchProject] = useState("");
+  const [visibleCount, setVisibleCount] = useState(6);
 
   const handleCategorySort = (category) => {
     if (!category) {
@@ -18,16 +19,23 @@ const Projects = () => {
         )
       );
     }
-  }
+    setVisibleCount(6); // Reset visible count after sorting
+  };
 
-  //Project search function 
   const handleSearchProject = (e) => {
     const query = e.target.value;
     setSearchProject(query);
 
     const searchFilteredProject = searchFiltered(projects, query, ["title", "description", "tagsList", "tags"]);
     setFilterProjects(searchFilteredProject);
-  }
+    setVisibleCount(6); // Reset visible count after searching
+  };
+
+  const handleViewMore = () => {
+    setVisibleCount((prev) => prev + 6); // Increase visible count by 6
+  };
+
+  const visibleProjects = filterProjects.slice(0, visibleCount);
 
   return (
     <>
@@ -80,31 +88,35 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* Page-specific content goes here */}
-        {filterProjects.length > 0 ? (<div className="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-12 justify-items-center">
-          <Card filterProjects={filterProjects} />
-        </div>) : ( <div className="grid grid-cols-1 justify-items-center">
+        {/* Projects */}
+        {visibleProjects.length > 0 ? (
+          <div className="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-12 justify-items-center">
+            <Card filterProjects={visibleProjects} />
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 justify-items-center">
             <div className="flex my-20 justify-center bg-secondary w-full lg:w-2/4 py-5 text-white text-center">
               <p className="font-bold text-xl lg:text-2xl">
                 No projects found matching your search.
               </p>
             </div>
-        </div>)}
-        
-       
+          </div>
+        )}
         {/* bottom */}
-        <div className="flex justify-center mt-10 w-full">
-          <button
-            id="view-more"
-            className="border border-white hover:border-stone-500 hover:text-stone-500 rounded bg-stone-500 hover:bg-white text-white text-sm transition-all py-2 px-5 uppercase font-bold"
-          >
-            View More
-          </button>
-        </div>
+        {filterProjects.length > visibleCount && visibleProjects.length > 0 && (
+          <div className="flex justify-center mt-10 w-full">
+            <button
+              id="view-more"
+              className="border border-white hover:border-stone-500 hover:text-stone-500 rounded bg-stone-500 hover:bg-white text-white text-sm transition-all py-2 px-5 uppercase font-bold"
+              onClick={handleViewMore}
+            >
+              View More
+            </button>
+          </div>
+        )}
       </main>
     </>
-
-  )
+  );
 };
 
 export default Projects;
