@@ -2,7 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
+@layer base {
+    html {
+      scroll-behavior: smooth;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Inter", sans-serif;
+      }
+      
+      #root {
+        background: url("https://i.ibb.co.com/Mh8ftjv/1.webp") no-repeat fixed center ;
+        background-size: cover;
+        min-height: 100vh;
+      }
+      /* Dropdown hidden by default */
+      .dropdown {
+      width: 100%;
+      height: auto;
+      left: 0;
+      top: 0;
+      transition: max-height 0.3s ease;
+      max-height: 0;
+      overflow: hidden;
+      }
+      
+      /* Dropdown when open */
+      .dropdown.open {
+      max-height: 300px;
+      }
+      
+      /* bg-neutral rounded-sm px-2 py-1 text-xs font-normal hover:bg-white transition-all hover:text-primary */
+      /*Skill buttons*/
+      .skillBtn{
+      border: solid white 1px;
+      margin: 5px;
+      padding: 2px 5px;
+      background-color: white;
+      transition: background-color .3s ease-in-out;
+      }
+      .skillBtn:hover{
+      background-color: transparent;
+      border: solid white 1px;
+      }
+      
+      
+      
+      /* Custom styles for <select> */
+      .custom-select {
+        position: relative;
+        width: 180px;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      .selected-option {
+        padding: 5px 8px;
+        background-color: white;
+        color: rgb(39, 39, 39);
+        box-shadow: 0 0 10px 2px rgb(218, 218, 218);
+        font-size: 14px;
+      }
+      
+      .options {
+        font-size: 14px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        border: 1px solid #ccc;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 0 0 10px 2px rgb(218, 218, 218);
+      }
+      
+      .option {
+        padding: 8px;
+        color: black;
+      }
+      
+      .option:hover {
+        background-color: #7FB2D7;
+        color: white;
+      }    
+  }
+ 
