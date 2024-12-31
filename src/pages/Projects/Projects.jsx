@@ -40,7 +40,7 @@ const Projects = () => {
   return (
     <>
       {/*------------- Project Page ---------------*/}
-      <main className="container mx-auto py-8 px-5">
+      <div >
         {/* Project utility section */}
         <div>
           {/* header and total projects  */}
@@ -114,7 +114,7 @@ const Projects = () => {
             </button>
           </div>
         )}
-      </main>
+      </div>
     </>
   );
 };

@@ -27,7 +27,7 @@ const Blogs = () => {
     setFilteredBlogs(filtered);
   }
   return (
-    <main className="container mx-auto py-8 px-5">
+    <div>
       {/* header and total blogs  */}
       <div className="flex flex-row items-center">
         <h1 className="text-3xl mb-6 uppercase font-extrabold">Blog</h1>
@@ -83,7 +83,7 @@ const Blogs = () => {
         {/* right side */}
         <RightSidebar blogs={blogs} handleCategorySelect={handleCategorySelect} />
       </div>
-    </main>
+    </div>
 
   )
 };

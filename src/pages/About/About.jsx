@@ -4,7 +4,7 @@ import { expertise, comfortable, familiar, tools, imageData } from '../../data/a
 const About = () => {
 
   return (
-    <main className="container mx-auto py-8 px-5">
+    <div>
       <h1 className="text-3xl mb-6 uppercase font-extrabold">MY SKILLS</h1>
       {/* skills*/}
       <div className="sm:flex gap-10">
@@ -64,7 +64,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
   )
 };

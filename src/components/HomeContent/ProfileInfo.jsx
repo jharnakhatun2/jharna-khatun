@@ -2,13 +2,8 @@ import React from "react"
 
 const ProfileInfo = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-start items-center">
-      {/* Profile Image */}
-      <img
-        src="https://i.ibb.co.com/G29Bn3G/profile.png"
-        alt="profile"
-        className="w-1/2 h-1/2 md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5 rounded-full"
-      />
+    <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+      
       {/* Profile Details*/}
       <div className="pl-0 md:pl-8 pt-2 md:pt-0">
         <div className="flex flex-row text-center">
@@ -75,7 +70,7 @@ const ProfileInfo = () => {
         </div>
         {/* buttons */}
         <div className="flex flex-col sm:flex-row justify-between">
-          <button className="bg-zinc-400 hover:bg-opacity-0 text-white border md:uppercase border-zinc-400 hover:border-white hover:text-gray transition-colors rounded-sm">
+          <button className="bg-zinc-400 hover:bg-opacity-0 text-white border md:uppercase border-zinc-400 hover:border-white hover:text-zinc-700 transition-colors rounded-sm">
             <a
               className="flex items-center py-1 px-1 md:px-2"
               href="https://drive.google.com/file/d/1XZdE78zwakW8di6uez9NtbR6DuVCOiyH/view?usp=drive_link"
@@ -122,6 +117,12 @@ const ProfileInfo = () => {
           </button>
         </div>
       </div>
+      {/* Profile Image */}
+      <img
+        src="https://i.ibb.co.com/G29Bn3G/profile.png"
+        alt="profile"
+        className="w-1/2 h-1/2 md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5 rounded-full"
+      />
     </div>
   )
 };

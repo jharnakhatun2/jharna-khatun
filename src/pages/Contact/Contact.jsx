@@ -29,9 +29,9 @@ const Contact = () => {
   return (
     <>
       {/*---------------- Contact page --------------------*/}
-      <main className="container mx-auto py-8 px-8 lg:px-0">
+      <div>
         {/* Contact info */}
-        <div className="max-w-4xl sm:flex items-center mx-auto text-[#333]">
+        <div className="sm:flex items-center mx-auto text-[#333]">
           <div className="sm:w-2/4">
             <h1 className="text-3xl font-extrabold">Let's Talk</h1>
             <p className="w-full sm:w-3/4 text-sm text-gray-500 mt-3">
@@ -60,7 +60,6 @@ const Contact = () => {
                     href="mailto:jharnakhatun203@gmail.com"
                     className="text-primary text-sm ml-3"
                   >
-                    <small className="block">Mail</small>
                     <span>jharnakhatun203@gmail.com</span>
                   </a>
                 </li>
@@ -81,15 +80,13 @@ const Contact = () => {
               ref={form}
               onSubmit={sendEmail}
               className="space-y-4"
-              id="contactForm"
             >
               <div>
                 <input
                   name="user_name"
-                  id="name"
                   type="text"
                   placeholder="Name"
-                  className="w-full rounded-md py-2.5 px-4 border border-zinc-400 text-sm outline-white bg-white bg-opacity-0"
+                  className="w-full rounded-md p-4 border border-zinc-400 text-sm outline-white bg-white bg-opacity-0"
                   required
                 />
                 <small />
@@ -97,10 +94,9 @@ const Contact = () => {
               <div>
                 <input
                   name="user_email"
-                  id="email"
                   type="email"
                   placeholder="Email"
-                  className="w-full rounded-md py-2.5 px-4 border border-zinc-400 text-sm outline-white bg-white bg-opacity-0"
+                  className="w-full rounded-md p-4 border border-zinc-400 text-sm outline-white bg-white bg-opacity-0"
                   required
                 />
                 <small />
@@ -108,7 +104,6 @@ const Contact = () => {
               <div>
                 <textarea
                   name="message"
-                  id="message"
                   placeholder="Message"
                   rows={6}
                   className="w-full rounded-md px-4 border border-zinc-400 text-sm pt-2.5 outline-white bg-white bg-opacity-0"
@@ -133,14 +128,14 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="bg-zinc-500 hover:bg-white font-semibold rounded-md text-sm px-4 py-2.5 w-full uppercase  transition-all text-white hover:text-zinc-500 hover:shadow"
+                className="bg-zinc-500 hover:bg-white font-semibold rounded-md text-sm p-4 w-full uppercase  transition-all text-white hover:text-zinc-500 hover:shadow"
               >
                 Send
               </button>
             </form>
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 };
