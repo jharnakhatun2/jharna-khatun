@@ -2,8 +2,13 @@ import React from "react"
 
 const ProfileInfo = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-      
+    <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+       {/* Profile Image */}
+       <img
+        src="https://i.ibb.co.com/G29Bn3G/profile.png"
+        alt="profile"
+        className="w-10/12 h-1/2 md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5 rounded-full"
+      />
       {/* Profile Details*/}
       <div className="pl-0 md:pl-8 pt-2 md:pt-0">
         <div className="flex flex-row text-center">
@@ -117,12 +122,6 @@ const ProfileInfo = () => {
           </button>
         </div>
       </div>
-      {/* Profile Image */}
-      <img
-        src="https://i.ibb.co.com/G29Bn3G/profile.png"
-        alt="profile"
-        className="w-1/2 h-1/2 md:w-1/3 md:h-1/3 lg:w-1/5 lg:h-1/5 rounded-full"
-      />
     </div>
   )
 };

@@ -6,13 +6,12 @@ const Home = () => {
   return (
     <>
       {/*---------------- Main Content --------------------*/}
-      <main className="container mx-auto  py-8 px-5">
-        <div className="h-[calc(100vh-200px)] flex flex-col justify-around ">
+        <div className="h-[calc(100vh-180px)] flex flex-col justify-around ">
         <div>
         {/* Identification content Start*/}
         <ProfileInfo />
         {/* Profile Details */}
-        <div className="pt-5 text-justify">
+        <div className="py-10 text-justify">
           <p>
             Hi there! I'm Jharna Khatun. I am a Front End Web Developer where my
             expertise on HTML, CSS, Tailwind, Sass, Bootstrap, JavaScript,
@@ -31,7 +30,6 @@ const Home = () => {
         </div>
         <SocialIcon/>
         </div>
-      </main>
     </>
   );
 };
