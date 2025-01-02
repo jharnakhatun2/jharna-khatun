@@ -1,4 +1,4 @@
-export const blogs = [
+[
     {
         "id": "1",
         "date": "Sep 18, 2024",

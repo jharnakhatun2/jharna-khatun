@@ -28,7 +28,7 @@ const RightSidebar = ({blogs, handleCategorySelect}) => {
       {/* Recent post */}
       <div className="my-8">
         <h1 className="text-lg uppercase font-bold">Recent Posts</h1>
-        <RecentPost/>
+        <RecentPost blogs={blogs}/>
       </div>
       {/* social Icons Start*/}
       <div className="flex">

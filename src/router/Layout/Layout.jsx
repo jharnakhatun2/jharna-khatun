@@ -6,7 +6,7 @@ import SmallNav from "../../components/Navigation/SmallNav";
 const Layout = () => {
   return (
     <div className="container mx-auto">
-        <header className="flex items-center justify-between px-5 py-3">
+        <header className="flex items-center justify-between px-5 py-3 sm:py-0">
         <Link to="/" className="uppercase font-black">JHARNA KHATUN</Link>
         <div className="hidden md:block">
           <LargeNav />

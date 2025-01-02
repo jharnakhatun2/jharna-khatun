@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../../components/Card/Card";
 import CustomSelect from "./CustomSelect";
-import projects from '../../data/projects';
 import { searchFiltered } from "../../ultf/search";
 
 const Projects = () => {
-  const [filterProjects, setFilterProjects] = useState(projects);
+  const [projects, setProjects] = useState([]);
+  const [filterProjects, setFilterProjects] = useState([]);
   const [searchProject, setSearchProject] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
+
+  useEffect(()=>{
+    fetch('projects.json')
+    .then((result)=>{
+      console.log(result);
+      setProjects(result);
+      setFilterProjects(result)
+    })
+    .catch((error)=> console.error(error));
+  },[])
 
   const handleCategorySort = (category) => {
     if (!category) {

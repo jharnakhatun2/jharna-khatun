@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { blogs } from "../../data/blog";
 
-const RecentPost = () => {
+
+const RecentPost = ({blogs}) => {
   // Sort blogs by date and get the 4 most recent posts
   const recentPosts = [...blogs]
     .sort((a, b) => new Date(b.date) - new Date(a.date))

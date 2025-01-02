@@ -1,12 +1,23 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Post from "../../components/Blogs/Post";
-import { blogs } from "../../data/blog";
 import RightSidebar from "./RightSidebar";
 import { searchFiltered } from "../../ultf/search";
 
 const Blogs = () => {
-  const [filteredBlogs, setFilteredBlogs] = useState(blogs);
+  const [blogs, setBlogs] = useState([]);
+  const [filteredBlogs, setFilteredBlogs] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+
+  //fetch data
+  useEffect(()=>{
+    fetch('blog.json')
+    .then((result)=>{
+      console.log(result);
+      setBlogs(result);
+      setFilteredBlogs(result)
+    })
+    .catch((error)=> console.error(error))
+  },[])
 
   // Handle category selection
   const handleCategorySelect = (category) => {
