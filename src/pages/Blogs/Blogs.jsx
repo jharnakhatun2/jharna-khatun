@@ -11,8 +11,8 @@ const Blogs = () => {
   //fetch data
   useEffect(()=>{
     fetch('blog.json')
+    .then(response => response.json())
     .then((result)=>{
-      console.log(result);
       setBlogs(result);
       setFilteredBlogs(result)
     })

@@ -11,8 +11,8 @@ const Projects = () => {
 
   useEffect(()=>{
     fetch('projects.json')
+    .then((response) => response.json())
     .then((result)=>{
-      console.log(result);
       setProjects(result);
       setFilterProjects(result)
     })

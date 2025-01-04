@@ -5,9 +5,24 @@ import SocialIcon from "../../components/HomeContent/SocialIcon";
 const Contact = () => {
   const form = useRef();
   const [status, setStatus] = useState(null); 
+  const [errorEmail, setErrorEmail] = useState("");
+
+  //email verification
+  const verifyEmail = (email) =>{
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return emailRegex.test(email);
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const email = form.current.user_email.value;
+    if(!verifyEmail(email)){
+      setErrorEmail("Invalid email address");
+      return;
+    }
+    // Clear error if email is valid
+    setErrorEmail("");
 
     emailjs
       .sendForm("service_2f62r5a", "template_vqmwm0f", form.current, {
@@ -101,6 +116,7 @@ const Contact = () => {
                 />
                 <small />
               </div>
+              {errorEmail && <small className="text-red-600">{errorEmail}</small>}
               <div>
                 <textarea
                   name="message"
