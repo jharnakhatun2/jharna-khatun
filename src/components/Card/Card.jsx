@@ -1,10 +1,11 @@
 import React from "react"
 import { sortedPosts } from "../../ultf/utility";
+import DisplayTags from "./DisplayTags";
 
 
-const Card = ({filterProjects}) => {
+const Card = ({ filterProjects }) => {
+    const lastInFirstProject = sortedPosts(filterProjects);
 
-const lastInFirstProject = sortedPosts(filterProjects);
     return (
         <>
             {
@@ -87,28 +88,7 @@ const lastInFirstProject = sortedPosts(filterProjects);
                             </p>
                             {/* tags */}
                             <div className="card">
-                                <div className="tags">
-                                    <ul className="flex flex-row flex-wrap">
-                                        {
-                                            project?.tagsList.map((tag, index) => (
-                                                <li key={index} className="flex flex-row items-center last:mr-0 mr-2 mb-2">
-                                                    <span className="inline-block bg-zinc-400 rounded-sm px-2 py-1 text-xs font-normal">
-                                                        {tag}
-                                                    </span>
-                                                </li>
-                                            ))
-                                        }
-                                        <li className="flex flex-row items-center mb-2">
-                                            <a
-                                                href="#"
-                                                className="toggle-tags transition duration-200 ease-in-out flex flex-row items-center hover:text-red-600 text-xs font-light"
-                                                title="Show more"
-                                            >
-                                                + more
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <DisplayTags project={project} />
                             </div>
                             {/* buttons */}
                             <div className="flex flex-row items-center">
