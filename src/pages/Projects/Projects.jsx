@@ -117,7 +117,7 @@ const Projects = () => {
           <div className="flex justify-center mt-10 w-full">
             <button
               id="view-more"
-              className="border border-white hover:border-stone-500 hover:text-stone-500 rounded bg-stone-500 hover:bg-white text-white text-sm transition-all py-2 px-5 uppercase font-bold"
+              className="border border-white hover:border-stone-500 hover:text-stone-500 rounded bg-stone-600 hover:bg-white text-white text-sm transition-all py-2 px-5 uppercase font-bold"
               onClick={handleViewMore}
             >
               View More
