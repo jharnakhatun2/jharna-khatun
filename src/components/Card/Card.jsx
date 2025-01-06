@@ -12,7 +12,7 @@ const Card = ({ filterProjects }) => {
                 lastInFirstProject.map((project, index) => (
                     <div key={index}
                         data-tags={project.tags.map(item => item)}
-                        className="projectCard bg-stone-500 shadow-md border border-white rounded-lg max-w-sm "
+                        className="projectCard bg-stone-500 shadow-2xl border border-white rounded-lg max-w-sm "
                     >
                         <div className="h-[255px] w-full">
                             <img
@@ -23,7 +23,7 @@ const Card = ({ filterProjects }) => {
                         </div>
                         <div className="p-5">
                             {/* header */}
-                            <a href="#">
+                            <a href={project?.live_links} target="_blank">
                                 <h5 className="title text-white font-bold text-2xl tracking-tight mb-2">
                                     {project?.title}
                                 </h5>
