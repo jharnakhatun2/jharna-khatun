@@ -67,5 +67,9 @@ export const expertise = [
     {
       src: "https://i.ibb.co.com/V37GLpC/mongo.webp",
       alt: "MongoDB Image"
+    },
+    {
+      src: "https://i.ibb.co.com/XyskZnx/github.webp",
+      alt: "Github Image"
     }
   ];
