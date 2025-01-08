@@ -1,30 +1,23 @@
-export const expertise = [
-    "JavaScript",
-    "ES6",
+export const frontEnd = [
+    "JavaScript(ES6+)",
+    "TypeScript",
     "React.js",
+    "Next.js",
     "Rest API",
     "React Hook Form",
     "React Formik Form",
-    "Tailwind CSS",
-    "DaisyUI",
     "ReactBootstrap",
-    "Responsive website",
-    "Bootstrap",
+    "Redux",
     "HTML5",
     "CSS3",
-    "SCSS",
+    "Responsive website"
+    
   ];
-  export const comfortable = [
-    "Express.js",
-    "Node.js",
-    "NoSQL(MongoDB)",
-    "MySQL",
-    "ReactQuery",
-    "Firebase Authentication",
-    "JSON Web Token (JWT)",
-    "Dotenv",
+  export const css = [
+    "SCSS","Tailwind CSS","DaisyUI", "Material UI", "Bulma CSS", "Bootstrap"
   ];
-  export const familiar = ["Next.js", "Redux", "TypeScript"];
+  export const backend = ["Node.js", "Express.js"];
+  export const database = ["MongoDB"];
   export const tools = [
     "Git",
     "GitHub",

@@ -1,5 +1,5 @@
 import React from "react"
-import { expertise, comfortable, familiar, tools, imageData } from '../../data/about';
+import { frontEnd, css, backend,database, tools, imageData } from '../../data/about';
 
 const About = () => {
 
@@ -11,16 +11,16 @@ const About = () => {
         <div className="w-full sm:w-2/4">
           {/* Skill dynamic buttons */}
           <div className="my-6">
-            <h2 className="text-lg mb-1 uppercase font-semibold">Expertise :</h2>
-            {expertise.map((item, index) => (
+            <h2 className="text-lg mb-1 uppercase font-semibold">Frontend Technologies:  :</h2>
+            {frontEnd.map((item, index) => (
               <button key={index} className="skillBtn">
                 {item}
               </button>
             ))}
           </div>
           <div className="my-6">
-            <h2 className="text-lg mb-1 uppercase font-semibold">Comfortable :</h2>
-            {comfortable.map((item, index) => (
+            <h2 className="text-lg mb-1 uppercase font-semibold">CSS tools and libraries :</h2>
+            {css.map((item, index) => (
               <button key={index} className="skillBtn">
                 {item}
               </button>
@@ -28,16 +28,24 @@ const About = () => {
           </div>
           <div className="my-6">
             <h2 className="text-lg mb-1 uppercase font-semibold">
-              Familiar with :
+            Backend :
             </h2>
-            {familiar.map((item, index) => (
+            {backend.map((item, index) => (
               <button key={index} className="skillBtn">
                 {item}
               </button>
             ))}
           </div>
           <div className="my-6">
-            <h2 className="text-lg mb-1 uppercase font-semibold">Tools :</h2>
+            <h2 className="text-lg mb-1 uppercase font-semibold">Database :</h2>
+            {database.map((item, index) => (
+              <button key={index} className="skillBtn">
+                {item}
+              </button>
+            ))}
+          </div>
+          <div className="my-6">
+            <h2 className="text-lg mb-1 uppercase font-semibold">Tools & Platforms :</h2>
             {tools.map((item, index) => (
               <button key={index} className="skillBtn">
                 {item}
