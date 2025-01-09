@@ -64,5 +64,9 @@ export const frontEnd = [
     {
       src: "https://i.ibb.co.com/XyskZnx/github.webp",
       alt: "Github Image"
+    },
+    {
+      src: "https://i.ibb.co.com/D5p5Tsq/typescript.webp",
+      alt: "TypeScript Image"
     }
   ];

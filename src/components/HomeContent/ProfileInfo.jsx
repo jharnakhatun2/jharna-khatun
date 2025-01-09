@@ -1,4 +1,5 @@
 import React from "react"
+import SocialIcon from "./SocialIcon";
 
 const ProfileInfo = () => {
   return (
@@ -121,6 +122,9 @@ const ProfileInfo = () => {
             </a>
           </button>
         </div>
+        {/* social media icon */}
+        <div className="py-3"><SocialIcon/></div>
+        
       </div>
     </div>
   )
