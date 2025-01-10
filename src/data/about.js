@@ -42,8 +42,16 @@ export const frontEnd = [
       alt: "ES6 Image"
     },
     {
+      src: "https://i.ibb.co.com/D5p5Tsq/typescript.webp",
+      alt: "TypeScript Image"
+    },
+    {
       src: "https://i.ibb.co.com/FqGmVJz/react.webp",
       alt: "React Image"
+    },
+    {
+      src: "https://i.ibb.co.com/qxwn4QH/next.webp",
+      alt: "nextjs Image"
     },
     {
       src: "https://i.ibb.co.com/RSmDJH5/tailwind.webp",
@@ -64,9 +72,5 @@ export const frontEnd = [
     {
       src: "https://i.ibb.co.com/XyskZnx/github.webp",
       alt: "Github Image"
-    },
-    {
-      src: "https://i.ibb.co.com/D5p5Tsq/typescript.webp",
-      alt: "TypeScript Image"
     }
   ];
