@@ -54,6 +54,10 @@ export const frontEnd = [
       alt: "nextjs Image"
     },
     {
+      src: "https://i.ibb.co.com/MD3FcSY/redux.webp",
+      alt: "redux Image"
+    },
+    {
       src: "https://i.ibb.co.com/RSmDJH5/tailwind.webp",
       alt: "Tailwind Image"
     },
