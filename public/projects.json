@@ -163,5 +163,20 @@
         "tagsList": ["JavaScript","HTML", "CSS", " Tailwind", "Daisy UI"],
         "live_links": "https://alphabet-match-game.netlify.app/",
         "source_code" : "https://github.com/jharnakhatun2/alphabet-clash"
+      },
+      {
+        "id" : "12",
+        "tags": ["react"],
+        "image": "https://i.ibb.co.com/fztwXcB7/dragonnews.webp",
+        "title":"Dragon News Portal",
+        "date": "Feb 2025",
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/news-portal",
+          "totalStars": "0"
+        },
+        "description": " Dragon News Hub, a modern news portal built with React and Vite, where includes save and secure Firebase for authentication.",
+        "tagsList": ["React","Firebase", "React Router Dom", " Tailwind", "Daisy UI", "Swiper.js", "React Hook Form"],
+        "live_links": "https://dragon-news-hub.vercel.app/",
+        "source_code" : "https://github.com/jharnakhatun2/news-portal"
       }
 ]
