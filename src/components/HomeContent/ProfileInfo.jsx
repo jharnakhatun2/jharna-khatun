@@ -79,7 +79,7 @@ const ProfileInfo = () => {
           <button className="bg-zinc-400 hover:bg-opacity-0 text-white border md:uppercase border-zinc-400 hover:border-white hover:text-zinc-700 transition-colors rounded-sm">
             <a
               className="flex items-center py-1 px-1 md:px-2"
-              href="https://drive.google.com/file/d/1XZdE78zwakW8di6uez9NtbR6DuVCOiyH/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1HvWQfqn3UoM1O7UKBlRtc1TrzpJD0_6R/view?usp=sharing"
               target="_blank"
             >
               <svg
