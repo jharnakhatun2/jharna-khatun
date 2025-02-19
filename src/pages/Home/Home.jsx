@@ -13,7 +13,7 @@ const Home = () => {
           {/* Profile Details */}
           <div className="py-10 text-justify">
             <p>
-              I am a passionate and skilled React Developer, Front-End Developer, and MERN Stack Developer with a proven track record of building intuitive, user-focused web applications. My expertise centers on JavaScript and TypeScript, along with advanced proficiency in React.js, Next.js, and Redux.
+              I am a passionate and skilled React Web Developer, Front-End Developer, and MERN Stack Developer with a proven track record of building intuitive, user-focused web applications. My expertise centers on JavaScript and TypeScript, along with advanced proficiency in React.js, Next.js, and Redux.
 
               I excel in integrating modern CSS libraries such as Tailwind CSS, Material UI, and Bulma CSS to create sleek, responsive, and user-centric interfaces. Also I'm proficient in the full MERN stack (MongoDB, Express.js, React.js, Node.js). I specialize in crafting seamless UI/UX experiences, integrating RESTful APIs, and optimizing performance for dynamic web applications.
             </p><br />
