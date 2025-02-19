@@ -8,7 +8,7 @@ const ProfileInfo = () => {
        <img
         src="https://i.ibb.co.com/dwmbMyhM/profile.webp"
         alt="profile"
-        className="w-10/12 h-1/2 md:w-1/3 md:h-1/3 lg:w-1/4 lg:h-1/4 rounded-full border-2"
+        className="w-10/12 h-1/2 md:w-1/3 md:h-1/3 lg:w-1/4 lg:h-1/4 rounded-full border-2 shadow-2xl"
       />
       {/* Profile Details*/}
       <div className="pl-0 md:pl-8 pt-2 md:pt-0">
@@ -76,7 +76,7 @@ const ProfileInfo = () => {
         </div>
         {/* buttons */}
         <div className="flex flex-col sm:flex-row justify-between">
-          <button className="bg-zinc-400 hover:bg-opacity-0 text-white border md:uppercase border-zinc-400 hover:border-white hover:text-zinc-700 transition-colors rounded-sm">
+          <button className="bg-zinc-400 hover:bg-opacity-0 text-white border md:uppercase border-zinc-400 hover:border-white hover:text-zinc-700 transition delay-150 duration-300 ease-in-out rounded-sm">
             <a
               className="flex items-center py-1 px-1 md:px-2"
               href="https://drive.google.com/file/d/1HvWQfqn3UoM1O7UKBlRtc1TrzpJD0_6R/view?usp=sharing"
@@ -100,7 +100,7 @@ const ProfileInfo = () => {
               <span className="pl-2">Resume</span>
             </a>
           </button>
-          <button className="border border-white font-bold md:uppercase px-2 hover:border-zinc-400 hover:bg-zinc-400 hover:text-white transition-colors sm:ml-2 mt-2 sm:mt-0 rounded-sm">
+          <button className="border border-white font-bold md:uppercase px-2 hover:border-zinc-400 hover:bg-zinc-400 hover:text-white transition delay-150 duration-300 ease-in-out sm:ml-2 mt-2 sm:mt-0 rounded-sm">
             <a
               className="flex items-center py-1 px-1 md:px-2"
               href="https://www.linkedin.com/in/jharna-khatun2/"

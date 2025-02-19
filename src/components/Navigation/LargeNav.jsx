@@ -5,7 +5,7 @@ const LargeNav = () => {
     const location = useLocation();
   return (
     <div className="flex items-center justify-between">
-          <nav className="contents text-base lg:text-md">
+          <nav className="contents text-base lg:text-sm">
             <ul className="mx-auto flex items-center">
               <li className="p-5 xl:p-8 ">
                 <Link to="/" style={{ color: location.pathname === '/' ? '#60a5fa' : 'black' }}>Home</Link>
@@ -19,10 +19,12 @@ const LargeNav = () => {
               <li className="p-5 xl:p-8 ">
                 <Link to="/blogs" style={{ color: location.pathname === '/blogs' ? '#60a5fa' : 'black' }}>Blogs</Link>
               </li>
+              <li className="p-5 xl:p-8 ">
+                <Link to="/contact" style={{ color: location.pathname === '/blogs' ? '#60a5fa' : 'black' }}>Contact me</Link>
+              </li>
             </ul>
           </nav>
           <div>
-          <Link to="/contact" className="border border-white rounded-full font-bold px-8 py-3 hover:border-transparent hover:bg-zinc-300 hover:text-white transition-all" style={{ color: location.pathname === '/contact' ? '#60a5fa' : 'black' }}>Contact me</Link>
           </div>
           </div>
   )

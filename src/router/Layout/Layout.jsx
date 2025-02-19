@@ -2,6 +2,7 @@ import React from "react"
 import { Link, Outlet } from "react-router-dom";
 import LargeNav from "../../components/Navigation/LargeNav";
 import SmallNav from "../../components/Navigation/SmallNav";
+import Footer from "../../pages/Footer/Footer";
 
 const Layout = () => {
   return (
@@ -18,8 +19,7 @@ const Layout = () => {
         
         <main className="py-8 px-5">
             <Outlet/>
-        </main>
-      
+        </main> 
     </div>
   )
 };

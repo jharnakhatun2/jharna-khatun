@@ -11,7 +11,7 @@ const Home = () => {
           {/* Identification content Start*/}
           <ProfileInfo />
           {/* Profile Details */}
-          <div className="py-10 text-justify">
+          <div className="py-10 text-justify text-sm">
             <p>
               I am a passionate and skilled React Web Developer, Front-End Developer, and MERN Stack Developer with a proven track record of building intuitive, user-focused web applications. My expertise centers on JavaScript and TypeScript, along with advanced proficiency in React.js, Next.js, and Redux.
 
