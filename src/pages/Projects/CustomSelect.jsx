@@ -17,9 +17,9 @@ function CustomSelect({ handleCategorySort }) {
   const options = ["", "JavaScript", "HTML", "CSS", "DOM", "React", "Next"];
 
   return (
-    <div className="custom-select">
+    <div className="custom-select transition duration-200 ease-in-out ">
       <div
-        className="selected-option flex justify-between"
+        className="selected-option flex justify-between rounded hover:shadow-sm"
         onClick={handleToggle}
       >
         {selectedOption || "Select Category"}
