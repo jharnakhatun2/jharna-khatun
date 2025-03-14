@@ -178,5 +178,20 @@
         "tagsList": ["React","Firebase", "React Router Dom", " Tailwind", "Daisy UI", "Swiper.js", "React Hook Form"],
         "live_links": "https://dragon-news-hub.vercel.app/",
         "source_code" : "https://github.com/jharnakhatun2/news-portal"
+      },
+      {
+        "id" : "13",
+        "tags": ["javascript"],
+        "image": "https://i.ibb.co.com/4wz5BZKj/busticket.webp",
+        "title":"Bus Ticket Booking",
+        "date": "Dec 2024",
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/bus-ticket-booking",
+          "totalStars": "0"
+        },
+        "description": "The Bus Ticket Booking project is a JavaScript-based web app designed for seamless ticket reservations. Built with JavaScript, Tailwind CSS, and DaisyUI, it offers a clean and responsive UI for selecting seats, calculating fares, and confirming bookings. The app dynamically updates seat availability and pricing, ensuring a smooth user experience.",
+        "tagsList": ["JavaScript"," Tailwind", "Daisy UI"],
+        "live_links": "https://bus-ticket-booking-web-app.netlify.app/",
+        "source_code" : "https://github.com/jharnakhatun2/bus-ticket-booking"
       }
 ]

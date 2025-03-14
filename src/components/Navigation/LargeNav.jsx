@@ -20,7 +20,7 @@ const LargeNav = () => {
                 <Link to="/blogs" style={{ color: location.pathname === '/blogs' ? '#60a5fa' : 'black' }}>Blogs</Link>
               </li>
               <li className="p-5 xl:p-8 ">
-                <Link to="/contact" style={{ color: location.pathname === '/blogs' ? '#60a5fa' : 'black' }}>Contact me</Link>
+                <Link to="/contact" style={{ color: location.pathname === '/contact' ? '#60a5fa' : 'black' }}>Contact me</Link>
               </li>
             </ul>
           </nav>

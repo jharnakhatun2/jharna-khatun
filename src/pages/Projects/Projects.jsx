@@ -98,7 +98,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* Projects */}
+        {/* Projects Card */}
         {visibleProjects.length > 0 ? (
           <div className="project-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 sm:gap-12 justify-items-center">
             <Card filterProjects={visibleProjects} />
@@ -112,7 +112,7 @@ const Projects = () => {
             </div>
           </div>
         )}
-        {/* bottom */}
+        {/* View More button */}
         {filterProjects.length > visibleCount && visibleProjects.length > 0 && (
           <div className="flex justify-center mt-10 w-full">
             <button
