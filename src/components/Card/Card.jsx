@@ -2,6 +2,7 @@ import React from "react"
 import { sortedPosts } from "../../ultf/utility";
 import DisplayTags from "./DisplayTags";
 import Description from "./Description";
+import { Link } from "react-router-dom";
 
 
 const Card = ({ filterProjects }) => {
@@ -15,17 +16,17 @@ const Card = ({ filterProjects }) => {
                         data-tags={project.tags.map(item => item)}
                         className="projectCard bg-stone-500 shadow-2xl border border-white rounded-lg max-w-sm "
                     >
-                        <div className="h-[255px] w-full">
-                            <img
+                        <div className="h-[255px] w-full cursor-pointer">
+                        <a href={project?.live_links} target="_blank"><img
                                 className="rounded-t-lg w-full h-full object-cover"
                                 src={project?.image}
                                 alt=""
-                            />
+                            /></a>
                         </div>
                         <div className="p-5">
                             {/* header */}
                             <a href={project?.live_links} target="_blank">
-                                <h5 className="title text-white font-bold text-2xl tracking-tight mb-2">
+                                <h5 className="title text-white font-semibold text-xl tracking-tight mb-2">
                                     {project?.title}
                                 </h5>
                             </a>
