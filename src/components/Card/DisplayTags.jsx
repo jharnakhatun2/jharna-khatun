@@ -21,7 +21,7 @@ const DisplayTags = ({ project }) => {
                 }
                 <li onClick={handleToggle} className="flex flex-row items-center mb-2">
                     <button
-                        className="toggle-tags transition duration-200 ease-in-out flex flex-row items-center text-zinc-900 hover:text-[#fde047] text-xs font-light"
+                        className="toggle-tags transition duration-200 ease-in-out flex flex-row items-center text-blue-300 hover:text-[#fde047] text-xs font-light"
                         title="Show more"
                     >
                         {showAllTags ? '- less' : '+ more'}

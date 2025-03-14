@@ -1,6 +1,7 @@
 import React from "react"
 import { sortedPosts } from "../../ultf/utility";
 import DisplayTags from "./DisplayTags";
+import Description from "./Description";
 
 
 const Card = ({ filterProjects }) => {
@@ -83,9 +84,7 @@ const Card = ({ filterProjects }) => {
                                 </div>
                             </div>
                             {/* details */}
-                            <p className="description font-normal mb-3 text-sm text-zinc-800">
-                                {project?.description}
-                            </p>
+                            <Description project={project}/>
                             {/* tags */}
                             <div className="card">
                                 <DisplayTags project={project} />
