@@ -193,5 +193,36 @@
         "tagsList": ["JavaScript"," Tailwind", "Daisy UI"],
         "live_links": "https://bus-ticket-booking-web-app.netlify.app/",
         "source_code" : "https://github.com/jharnakhatun2/bus-ticket-booking"
+      },
+      {
+        "id" : "14",
+        "tags": ["react"],
+        "image": "https://i.ibb.co.com/GvGHSvzn/course-deep.webp",
+        "title":"COURSE DEEP",
+        "date": "Oct, 2022",
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/course_deep_client",
+          "totalStars": "0"
+        },
+        "description": "Course Deep is a full-stack web application built with React.js, Bootstrap, Node.js, Express.js, MongoDB, and Firebase. It provides a seamless platform for users to explore and enroll in courses. With a dynamic UI, secure authentication, and a robust backend, the app ensures a smooth learning experience. ",
+        "tagsList": ["React.js"," Bootstrap", "Node.js","Express.js","MongoDB","Firebase"],
+        "live_links": "https://course-deep.web.app/",
+        "source_code" : "https://github.com/jharnakhatun2/course_deep_client"
+      },
+      {
+        "id" : "15",
+        "tags": ["react"],
+        "image": "https://i.ibb.co.com/9C83rsf/admin.webp",
+        "title":"BAMBOO BRUSH DASHBOARD",
+        "date": "Mar, 2025",
+        "stars": {
+          "href": "https://github.com/jharnakhatun2/react-node-dashboard",
+          "totalStars": "0"
+        },
+        "description": "The Bamboo Brush admin dashboard is built with React (v19.0.0) and Vite, ensuring a fast and modern development experience. It features a TailwindCSS-styled UI with HeroUI components for a polished look. Firebase handles authentication, while Recharts provides interactive data visualization. React Router ensures smooth navigation. SweetAlert2 delivers elegant alerts. The backend, powered by Node.js and Express.js, manages API requests, with MongoDB as the database. CORS enables secure cross-origin requests, and Dotenv manages environment variables efficiently. ",
+        "tagsList": ["React.js","Tailwind Css","Hero UI","Node.js","Express.js","MongoDB","Firebase"],
+        "live_links": "https://react-node-dashboard-gold.vercel.app/",
+        "source_code" : "https://github.com/jharnakhatun2/react-node-dashboard"
       }
+      
 ]
